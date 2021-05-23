@@ -1,0 +1,658 @@
+
+<div class="relative clearfix full-width">
+    <!-- Menu & Slide -->
+    <div class="clearfix container-web relative">
+        <div class=" container relative">
+            <div class="row">
+                <div class=" relative menu-slide col-lg-12 clear-padding bottom-margin-15-default">
+                    <!-- Menu -->
+                    <div class=" menu-web relative menu-bg-white border no-border-t categoriesbox" >
+                        
+                        <ul *ngFor="let categories of category  ; let i= index" >
+                            <li><a routerLink="/"> <img src="{{categories.media[0].icon}}" alt=" {{categories.name}}" /><p>{{categories.name}}</p></a>
+                                <ul  *ngFor="let item of objsubcategory | keyvalue">
+                                    Key-> {{item.key}} and {{item.value}}
+                                    
+                                    <li>
+
+                                </li>
+                            </ul>
+                            </li>
+                      </ul>
+                        
+                        <!-- <ul>
+                            <li><a routerLink="/products"><img src="assets/img/icon_hot_gray.png" alt=" IconRestaurant & Bakery" /> <p>Restaurant & Bakery</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_food_gray.png" alt="Icon Food" /> <p>Grocery & Gourmet Food</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_mobile_gray.png" alt="Icon Mobile & Tablet" /> <p>Mobile & Tablet</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_electric_gray.png" alt="Icon Electric Appliances" /> <p>Electric Appliances</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_computer_gray.png" alt="Icon Electronics & Technology" /> <p>Electronics & Technology</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_fashion_gray.png" alt="Icon Fashion" /> <p>Fashion</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_health_gray.png" alt="Icon Health & Beauty" /> <p>Health & Beauty</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_mother_gray.png" alt="Icon Mother & Baby" /> <p>Mother & Baby</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_book_gray.png" alt="Icon Books & Stationery" /> <p>Books & Stationery</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_home_gray.png" alt="Icon Home & Life" /> <p>Home & Life</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_sport_gray.png" alt="Icon Sports & Outdoors" /> <p>Sports & Outdoors</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_auto_gray.png" alt="Icon Auto & Moto" /> <p>Auto & Moto</p></a></li>
+                            <li><a routerLink="/products"><img src="assets/img/icon_voucher_gray.png" alt="Icon Voucher Service" /> <p>Voucher Service</p></a></li>
+                        </ul> -->
+                    </div>
+                    <!-- Slide -->
+                   
+                    <div class="clearfix slide-box-home slide-v3 relative top-margin-15-default left-margin-15-default" >
+                        <div class="clearfix slide-box-home slide-v3 relative top-margin-15-default left-margin-15-default  " >
+                             <div class="owl item">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide><img src="https://beta.portal.janbazar.in/uploads/banner/{{col1}}"></ng-template>  
+        <ng-template carouselSlide><img src="https://beta.portal.janbazar.in/uploads/banner/{{col2}}"></ng-template>
+           </owl-carousel-o>
+        </div>
+        <!-- </div> -->
+                            <!-- <div class="clearfix slide-home owl-carousel owl-theme"   >
+                            <div class="item" ><a routerLink="/"><img src="https://beta.portal.janbazar.in/uploads/banner/{{col1}}" alt="Banner Home V3" >
+                            </a></div>
+                            <div class="item" ><a routerLink="/"><img src="https://beta.portal.janbazar.in/uploads/banner/{{col1}}" alt="Banner Home V3">
+                            </a></div> -->
+                        </div>
+                    </div>
+                
+                    
+                    <div class="category-image top-margin-15-default left-margin-15-default float-left border" style="height: 100%;" object>
+                    <img src="assets/img/home-bot.jpg" style="width: 100%;">
+                    </div>
+                    <div class="clearfix box-banner-small-v3 top-margin-15-default left-margin-15-default box-banner-small homebox">
+                        <div class="effect-layla banner-v3-home center-vertical-image zoom-image-hover relative bottom-margin-15-default " >
+                            <img src="https://beta.portal.janbazar.in/uploads/banner/{{col2}}" alt="">
+                            <a routerLink="/"></a>
+                        </div>
+                        <div class="effect-layla banner-v3-home center-vertical-image zoom-image-hover relative">
+                            <img src="https://beta.portal.janbazar.in/uploads/banner/{{col3}}" alt="">
+                            <a routerLink="/"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- End Menu & Slide -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Box -->
+    <div class="top-margin-default container-web fresh-fud">
+        <div class=" container">
+            <div class="row">
+                <div class="clearfix title-box title-box-v3 full-width" style="border-top: 1px solid #eeeeee;">
+                    <div class="clearfix name-title-box title-category title-green-bg relative" >
+                        <img src="assets/img/icon_food_color.png" alt="Icon Food" class="absolute">
+                        <p class="text-white">fresh food</p>
+                    </div>
+                    <div class="clearfix menu-title-box capitalize">
+                        <ul style="    margin-bottom: 0px !important;">
+                            <li><a routerLink="javascript:;" onclick="showBoxCateHomeByID('#confectionery','.box-food-content')">Confectionery</a></li>
+                            <li><a routerLink="javascript:;" onclick="showBoxCateHomeByID('#milk-cream','.box-food-content')">Milk & Cream</a></li>
+                            <li><a routerLink="javascript:;" onclick="showBoxCateHomeByID('#dry-food','.box-food-content')">Dry Food</a></li>
+                            <li><a routerLink="javascript:;" onclick="showBoxCateHomeByID('#vegetables','.box-food-content')">Vegetables</a></li>
+                            <li><a routerLink="javascript:;" onclick="showBoxCateHomeByID('#drinks','.box-food-content')">Drinks</a></li>
+                            <button class="animate-default button-hover-red btn-grocery ">View our daily price list</button>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class=" bottom-margin-default full-width">
+                    <!-- Banner Home V3 -->
+                    <div class="effect-bubba zoom-image-hover overfollow-hidden banner-category banner-category-v3 float-left relative border no-border-t no-border-l no-border-r mb-none-img">
+                        <img src="https://beta.portal.janbazar.in/uploads/banner/{{col2}}" alt="Banner Home V3">
+                        <a routerLink="/products"></a>
+                    </div>
+                    <!-- List Product V3 -->
+                    <div class="clearfix box-content-product-home-v3 float-left relative">
+                        <div class="box-food-content relative animate-default active-box-category hidden-content-box border-collapsed-box" id="confectionery">
+                            <div class="clearfix border-collapsed-element relative product-no-ranking percent-content-4" *ngFor ="let trending of trendings">
+                                <div class="effect-hover-zoom center-vertical-image" >
+                                    <img src="" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a routerLink="/products">{{trending.name}}</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">{{trending.price}}</span> {{trending.discount_price}}</p>
+                                </div>
+                            </div>
+                            <!-- <div class="clearfix absolute name-product-no-ranking">
+                                <p class="title-product clearfix full-width" *ngFor="let trending of trendings ; let i=index"><a routerLink="/products">Voyage yoga bag</a></p>
+                                <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                            </div> -->
+                            <!-- <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a routerLink="/products">Impulse Duffle</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div>
+                            <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a routerLink="/products">MH01-Black</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div>
+                            <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a href="#">Wayfarer Messenger Bag</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div>
+                            <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a href="#">MH02-Black09</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div>
+                            <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a routerLink="/products">Voyage Yoga Bag</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div>
+                              <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a routerLink="/products">Voyage Yoga Bag</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div>
+                              <div class="clearfix relative border-collapsed-element product-no-ranking percent-content-4">
+                                <div class="effect-hover-zoom center-vertical-image">
+                                    <img src="assets/img/products2.jpg" alt="Product Image . . .">
+                                    <a routerLink="/products"></a>
+                                </div>
+                                <div class="clearfix absolute name-product-no-ranking">
+                                    <p class="title-product clearfix full-width"><a routerLink="/products">Voyage Yoga Bag</a></p>
+                                    <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                </div>
+                            </div> -->
+                        </div>
+       
+
+                    </div>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Box -->
+
+    <div class="container new-arriv">
+        <div class="row">
+            <div class="col-lg-12 new-ariv-ic-img">
+               
+                        
+                        <h5 style="background: #f3f2f2; padding:10px;"><img src="assets/img/arrival.png">NEW ARRIVAL</h5>
+                   
+            
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                   <div class="items ">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                       
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                         
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                          <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden" >
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                           <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                       <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <hr>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                          <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                  <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                     <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="#"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                    <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </div>
+             <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                           <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                        <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                           <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                        <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                           <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="#"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                  <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                         <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="/products"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                   <div class="items">
+                                    <div class="full-width product-category relative">
+                                        <div class="image-product  relative overfollow-hidden">
+                                            <div class="center-vertical-image">
+                                                <img src="assets/img/product.jpg" alt="Product">
+                                            </div>
+                                            <a routerLink="#"></a>
+                                            <ul class="option-product animate-default">
+                                                <li class="relative"><a routerLink="/products"><i class="data-icon data-icon-ecommerce icon-ecommerce-bag"></i></a></li>
+                                                <li class="relative"><a routerLink="/products"><i class="data-icondata-icon-basic icon-basic-heart" aria-hidden="true"></i></a></li>
+                                                <li class="relative"><a routerLink="javascript:;" ><i class="data-icon data-icon-basic icon-basic-magnifier" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-product animate-default title-hover-black clearfix full-width"><a routerLink="/products">Voyage yoga bag</a></h3>
+                                        <p class="clearfix price-product"><span class="price-old">Rs 700</span> Rs 350</p>
+                                        <div class="clearfix ranking-product-category ranking-color">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+

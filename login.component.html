@@ -1,0 +1,71 @@
+<!-- Content Box -->
+<div class="relative full-width">
+    <!-- Breadcrumb -->
+    <div class="container-web relative">
+        <div class="container">
+            <div class="row">
+                <div class="breadcrumb-web">
+                    <ul class="clear-margin">
+                        <li class="animate-default title-hover-red"><a routerLink="/">Home</a></li>
+                        <li class="animate-default title-hover-red"><a routerLink="/myaccount">myaccount</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+    <!-- Content Checkout -->
+    <div class="relative container-web">
+        <div class="container">
+            <div class="row relative">
+                <div class="full-width relative top-checkout-box overfollow-hidden top-margin-default">
+                    <div class="col-md-6 col-sm-12 col-xs-12 clear-padding-left left-top-checkout">
+                        <div class="full-width box-btn-top-click">
+                            <!-- <p>Returning customer? <a routerLink="/login" class="animate-default title-hover-red">Click here to login</a></p> -->
+                            <p>If you are a New customer? <a routerLink="/register" class="animate-default title-hover-red"><b>Click here to register</b></a></p>
+                            
+                            <!-- <p class="intro-top-click top-margin-default bottom-margin-default">If you are a new customer, please proceed to Create an Account section. <button type="submit" class="animate-default button-hover-red"><a routerLink="/register">Create an Account</a></button></p> -->
+                            <p class="intro-top-click top-margin-default bottom-margin-default"><b>Track your Account.</b><button type="submit" class="animate-default button-hover-red"><a routerLink="/myaccount">My Account</a></button></p>
+                            <div class="relative ">
+                                <p class="intro-top-click top-margin-default bottom-margin-default">Returning customer?If you have shopped with us before, please enter your details in the boxes below.</p>
+                                <form name="form" (ngSubmit)="onSubmit()" class="form-placeholde-animate" >
+                                    <div class="form-input full-width clearfix relative ">
+                                        <label>Email / Phone *</label>
+                                        <input class="full-width" type="text" [(ngModel)]=form.email name="email"placeholder="Your email.. " >
+                                        
+                                    </div>
+                                    <div class="form-input full-width clearfix relative">
+                                        <label>Password *</label>
+                                        <input class="full-width" type="text" [(ngModel)]=form.password name="password" placeholder="Your Password..">
+                                    </div>
+                                    
+                                   
+                                    <div class="relative justify-content form-login-checkout ssubmit center button1">
+                                        <button type="submit" class="animate-default button-hover-red">LOGIN</button></div>
+                                        <div>
+                                        <ul class="check-box-custom list-radius clear-margin clear-margin">
+                                            <li>
+                                                <label class="clear-margin">Remember me
+                                                    <input type="checkbox" >
+                                                      <span class="checkmark"></span>
+                                                  </label>
+                                            </li>
+                                        </ul>
+                                        <a href="#"  class="animate-default title-hover-red">Lost your password?</a>
+                                    </div>
+                                    <!-- <div class="relative justify-content form-login-checkout">
+                                        <button type="submit" class="animate-default button-hover-red"><a routerLink="/register">Create an Account</a></button>
+                                    </div> -->
+                                </form>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Content Shoping Cart -->
+                
+                                     
+                
+                
